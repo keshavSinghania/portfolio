@@ -1,0 +1,302 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#001005;
+    --text-color:white;
+    --main-color:#00ff51;
+}
+/* body{
+    background-color: var(--bg-color);
+} */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.3);
+    width:100%;
+    height:60px;
+    z-index: 100;
+    color:var(--text-color);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 200;
+    font-style: normal;
+}
+.navbar .logo {
+    transition: transform 0.2s ease-in-out;
+}
+.navbar .logo:hover{
+    transform:scale(1.1)
+}
+
+.navbar span{
+    color: var(--main-color);
+}
+.navbar .navbtn ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:20vw;
+    height:50px;
+    
+}
+.navbar li{
+    list-style: none;
+    color: var(--text-color);  
+    transition: 0.2s ease;
+}
+.navbar li:hover{
+    border-bottom: 2px solid var(--main-color);
+    color:var(--main-color);
+}
+.mainLeft{
+    color:var(--text-color);
+}
+main{
+    background-color: var(--bg-color);
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:100vh;
+    width: 100%;
+    overflow: visible;
+}
+.mainRight{
+    padding: 35px;
+}
+.mainRight img{
+    width:30vw;
+    border-radius:50%;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.mainRight img:hover{
+    box-shadow: 0 0 35px var(--main-color);
+}
+.mainLeftDisplay{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+}
+.mainLeft h1{
+    padding: 5px;
+    font-size: 40px;
+}
+.mainLeft h3{
+    padding: 5px;
+    font-size: 25px;
+}
+.mainLeft p{
+    padding: 5px;
+}
+.mainLeft span{
+    color:var(--main-color);
+}
+/*hover over all the buttomm icon present inside main section*/
+.mainBtn i{
+    border-radius: 0 0 10px var(--main-color);
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    border:solid var(--main-color) 2px;
+    transition: all 0.3s ease;
+    margin: 1px;
+}
+.mainBtn i:hover{
+    box-shadow:0 0 20px var(--main-color);
+    color: var(--bg-color);
+    background-color:var(--main-color);
+    transform: scale(1.1) translateY(-5px);
+}
+.mainBtn {
+    padding: 25px;
+}
+ .mainBtn2{
+    padding: 20px;
+}
+.mainBtn2 button{
+    padding: 5px 10px;
+    border-radius:15px;
+    border: solid 2px var(--main-color);
+    margin: 1px;
+    
+}
+.mainBtn2 .btn1{
+    background-color:var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+.mainBtn2 .btn1:hover{
+    background-color:var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.mainBtn2 .btn2:hover{
+    background-color:var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.mainBtn2 .btn2{
+    background-color:var(--bg-color);
+    color: var(--main-color);
+}
+#about{
+    background-color: var(--second-bg-color);
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height:100vh;
+    width: 100%;
+    overflow: visible;
+}
+
+#about .mainLeft{
+    margin-right: 15vw;
+}
+
+.service{
+    /* background-color: var(--bg-color); 
+    */
+    background-color:var(--bg-color);
+    width:100%;
+    height:100vh;
+}
+ .serviceHeading{
+    padding: 50px;
+} 
+.serviceHeading h1{
+    color: white;
+    text-align:center;
+    font-size: 40px;
+}
+.serviceContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    padding: 20px;
+}
+.content1, .content2, .content3{
+    background-color:var(--main-color);
+    height:55vh;
+    width:20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.3s ease; 
+    border:3px solid transparent;
+}
+.content1 i, .content2 i, .content3 i{
+    font-size: 50px;
+    padding: 10px;
+}
+.content1 h2, .content2 h2, .content3 h2{
+    padding: 10px;
+} 
+.content1:hover, .content2:hover, .content3:hover{
+    background-color: var(--second-bg-color);
+    color:var(--main-color);
+    border: 3px solid var(--main-color);
+    transform: scale(1.03);
+}
+/*contact section css starts from here*/
+.contact h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.contact{
+    background-color: var(--second-bg-color);
+    color:white;
+    text-align: center;
+    width:100%;
+    height:70vh;
+}
+.contact h2 span{
+    color:var(--main-color);
+
+}
+.contact h2{
+    margin: 30px;
+}
+.contactBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.cBox1{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.cBox2{
+    display: flex;
+    flex-direction: column;
+}
+.cBox1 .text{
+    background-color: var(--bg-color);
+    border: solid 2px var(--main-color);
+    border-radius:5px;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    color: var(--main-color);
+}
+.cBox2 [placeholder="Your Message"]{
+    background-color: var(--bg-color);
+    border: solid 2px var(--main-color);
+    border-radius:5px;
+    width: 250px;
+    height: 150px;
+    color:var(--main-color);
+    padding: 10px;
+}
+.cBox2 input{
+    margin: 10px;
+    margin-left: 75px;
+    background-color: var(--main-color);
+    border:3px solid var(--main-color);
+    border-radius: 50px;
+    width: 100px;
+    height: 25px;
+}
+.cBox2 input:hover{
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.02);
+}
+.footer{
+    background-color:var(--bg-color);
+    height: 30vh;
+    width:100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.footer a{
+    color:white;
+    padding-left: 5px;
+    overflow: hidden;
+}
